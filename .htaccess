@@ -1,0 +1,23 @@
+RewriteEngine On
+RewriteBase /SqlLite-Address-Book/
+
+# General rewrite rules
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-l
+
+# Home
+RewriteRule ^home$ index.php
+RewriteRule ^home/$ index.php
+
+# Edit
+RewriteRule ^edit/([0-9]+)/$ edit.php?id=$1
+RewriteRule ^edit/([0-9]+)$ edit.php?id=$1
+
+# Add
+RewriteRule ^add$ add.php
+RewriteRule ^add/$ add.php
+
+# Delete
+RewriteRule ^delete/([0-9]+)/$ delete.php?id=$1
+RewriteRule ^delete/([0-9]+)$ delete.php?id=$1

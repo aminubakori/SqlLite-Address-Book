@@ -1,0 +1,10 @@
+Sqlite Address Book is a small Sqlite Address Book written in PHP and Sqlite.
+
+REQUIREMENTS
+
+PHP Version 5.*
+Sqlite Version 2.8.*
+
+INSTALL
+
+Just Navigate to http://[your_server]/[folder]/install.php
